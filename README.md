@@ -42,3 +42,45 @@ MetaData : Reviewer Metadata - No. of Reviews and followers
 Time: Date and Time of Review
 
 Pictures : No. of pictures posted with review
+
+**Project Description**
+*EDA* - Performed exploratory data analysis and text preprocessing
+*Data Cleaning* - I have to drop the entire feature as there are 50% null values.
+*Feature Selection* - For sentiment analysis, I have used rating and reviews features. - For clustering I got cost, cuisine and timing of the restaurant as the features to build the model.
+Model development - For sentiment analysis, developed different models like:- Multinomial NB, Logistic regression, Random forest classifier - For clustering the restaurants we have used the k-means.
+**Needs of this project**
+**data exploration**
+**data processing/cleaning**
+**text preprocessing/cleaning**
+**sentiment analysis on reviews**
+**cluster the restaurant into different segments.**
+**Sentiment analysis**
+-Plotted the distribution of ratings to have an understanding of the proportion of good and bad reviews. -Made many visualizations which include, top 10/bottom 10 restaurants in terms of average rating. -Had a clear understanding of the cost summary of the restaurants. -Done pre-processing such as removing emojis, punctuations and only used Adjectives and verbs to reduce dimensionality. -TF-IDF vectorizer was used to transform the dataset -Built several models such as Multinomial NB, Logistic regression, Random forest classifier etc.
+
+**Clustering**
+-Calculated the time each Restaurant was opened weekly. -Did the pre-processing, Clubbed some cuisines together so that one-hot encoding would be possible. -Removed the unwanted variables and Normalized the data. -Clustered the data using K-means as well as Hierarchical clustering.
+
+**Procedure Involved**
+
+**Model Used on data**
+K-mean clustering.
+Bad of words.
+Logistic Regression.
+MultinomialNB.
+Decision tree.
+Random forest.
+**Procedure performed and Observations**
+ Started with data loading and importing the libraries and then started with exploring the data and looking into columns and rows. Looked for the missing values in the dataset and imputed accordingly.
+Did the EDA for the dataset and tried to find out the trend in the data. Got some of the questions like which are the cuisines which are popular and what are the weekly restaurant timings, and explored the cheap restaurants and costly restaurants in the given dataset. I have found that there were prices around 2500-2800 to maximum or costly prices and where 250 rupees to 150 rupees restaurants were the cheapest. I also have explored some commonly used words like good,order, food, India, Chinese etc.
+Once data exploration was done I have started clustering using cuisines where 61 being the highest number for the restaurant with North Indian cuisines and having 7 as top 10th was bakery.
+**Moved to the Natural Language Processing (NLP)**
+I have performed some of the tasks for the text understanding:
+Started with Data-loading and data preprocessing where data preprocessing has below steps to perform.
+·         Expand Contractions-(don’t to do not).
+·         Lower Case-(Convert to lower case).
+·         Remove Punctuations-(!?:).
+·         Remove words and digits containing digits- (game5ts7 replace with empty string).
+·         Remove Stopwords-(This, that, is, am are).
+·         Rephrase Text(converting email ids to email address).
+·         Stemming and Lemmatization. (Playing to play, and Methodology-Method)
+·         Remove White spaces.( simply removal of extra spaces).
